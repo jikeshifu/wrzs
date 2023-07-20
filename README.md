@@ -1,37 +1,41 @@
 # 无人值守共享空间共享茶室自助棋牌室源码
-
+![输入图片说明](image.png)
 #### 介绍
 本系统适用于无人值守场景（茶室、棋牌室、运动场馆），主要功能流程为:顾客小程序下单预约—-自助开门—-开电—-云喇叭语音提醒。系统还考虑了加盟和商城，小复杂，其代码分为5个端。
 
-#### 软件架构
-软件架构说明
+一、摘要
+本系统适用于无人值守场景（茶室、棋牌室、运动场馆），主要功能流程为:顾客小程序下单预约—-自助开门—-开电—-云喇叭语音提醒。系统还考虑了加盟和商城，小复杂，其代码分为5个端：
+
+四个端需要部署在服务器，如：
+
+系统使用了Supervisor对房间和订单自动化管理
 
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+二、系统结构
+1.接口服务端,部署案例：https://was.weishequ.com ;无UI界面。
+2.系统管理端,部署案例：https://wma.weishequ.com
 
 
-#### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+3.门店管理端,部署案例：https://wsm.weishequ.com （点击图片放大查看）
+
+
+
+
+
+4.手机管理端,部署案例：https://wmm.weishequ.com
+
+
+5.小程序端,部署案例：智云共享 小程序，扫码体验
+
+
+
+
+
+
+
+
+
+
+
+
