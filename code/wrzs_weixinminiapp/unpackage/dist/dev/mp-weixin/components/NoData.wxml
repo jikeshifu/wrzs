@@ -1,0 +1,1 @@
+<view class="layer-mask data-v-547508a6"><view class="card-box data-v-547508a6"><image src="{{baseUrl+'/static/imgs/no_data.png'}}" class="data-v-547508a6"></image><view class="p data-v-547508a6">{{title}}</view></view></view>

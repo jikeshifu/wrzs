@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "index": "/pages/Tabs/index/index",
+    "user": "/pages/Tabs/user/user",
+    "tabs": "/components/Tabs",
+    "list": "/pages/Tabs/list/list"
+  }
+}

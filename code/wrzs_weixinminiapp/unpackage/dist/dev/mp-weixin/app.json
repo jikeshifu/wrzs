@@ -1,0 +1,209 @@
+{
+  "pages": [
+    "pages/Tabs/index",
+    "pages/mendianguanli/index"
+  ],
+  "subPackages": [
+    {
+      "root": "pagesB",
+      "pages": [
+        "myAsset/yue/yue",
+        "myAsset/coupon/coupon",
+        "storeDetail/storeDetail",
+        "advDetail/advDetail",
+        "integral/integral",
+        "roomDetail/roomDetail",
+        "List/nearbyStore/nearbyStore",
+        "List/store/store",
+        "payOrder/payOrder",
+        "payOrder/payOrder2",
+        "List/order/order",
+        "renew/renew",
+        "recharge/recharge",
+        "List/wallet/wallet",
+        "jmhz/jmhz",
+        "feedback/feedback",
+        "List/citys/citys",
+        "paySuccess/paySuccess"
+      ],
+      "plugins": {
+        "player": {
+          "version": "2.1.1",
+          "provider": "wxa75efa648b60994b"
+        }
+      }
+    },
+    {
+      "root": "pagesC",
+      "pages": [
+        "index/index",
+        "search/search",
+        "goodsDetail/goodsDetail",
+        "payOrder/payOrder",
+        "order/order"
+      ]
+    },
+    {
+      "root": "pagesSHG",
+      "pages": [
+        "index/index",
+        "detail/detail",
+        "payOrder/payOrder"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#fff",
+    "disableScroll": true
+  },
+  "preloadRule": {
+    "pagesB/paySuccess/paySuccess": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesSHG/index/index": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesC/payOrder/payOrder": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesC/goodsDetail/goodsDetail": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesC/search/search": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesC/index/index": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/List/citys/citys": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/feedback/feedback": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/jmhz/jmhz": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/List/store/store": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/List/wallet/wallet": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/recharge/recharge": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/renew/renew": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/List/order/order": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/payOrder/payOrder": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/payOrder/payOrder2": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/List/nearbyStore/nearbyStore": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/myAsset/yue/yue": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/myAsset/coupon/coupon": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/storeDetail/storeDetail": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    },
+    "pagesB/roomDetail/roomDetail": {
+      "network": "all",
+      "packages": [
+        "__APP__"
+      ]
+    }
+  },
+  "networkTimeout": {
+    "request": 10000
+  },
+  "requiredPrivateInfos": [
+    "chooseAddress",
+    "getLocation"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取当前位置"
+    }
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "w-loading": "/components/w-loading",
+    "topbar": "/components/Topbar",
+    "uni-load-more": "/components/uni-load-more",
+    "no-data": "/components/NoData"
+  }
+}

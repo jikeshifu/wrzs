@@ -1,0 +1,8 @@
+{
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "w-loading": "/components/w-loading",
+    "no-data": "/components/NoData",
+    "uni-load-more": "/components/uni-load-more"
+  }
+}

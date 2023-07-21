@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "w-loading": "/components/w-loading",
+    "uni-count-down": "/components/uni-countdown/uni-countdown"
+  }
+}

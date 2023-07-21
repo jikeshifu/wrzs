@@ -1,0 +1,386 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+map {
+  width: 100%;
+  height: 100%;
+}
+.index {
+  position: relative;
+  height: 100%;
+}
+.out-box {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  pointer-events: none;
+}
+.out-box .fixed-topbar {
+  position: relative;
+}
+.out-box .fixed-topbar .bg {
+  width: 100%;
+  height: 152px;
+}
+.out-box .fixed-topbar .fixed-item {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: auto;
+}
+.out-box .fixed-topbar .fixed-item .title {
+  display: flex;
+  align-items: center;
+  padding-left: 12rpx;
+}
+.out-box .fixed-topbar .fixed-item .title .logo {
+  width: 296rpx;
+  height: 50rpx;
+}
+.out-box .fixed-topbar .fixed-item .title .picker-view {
+  color: #ffffff;
+  font-size: 24rpx;
+  margin-left: 40rpx;
+}
+.out-box .fixed-topbar .fixed-item .title .picker-view .iconfont {
+  font-size: 20rpx;
+  margin-left: 10rpx;
+}
+.out-box .banner {
+  position: relative;
+  z-index: 2;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -18%;
+  pointer-events: auto;
+  height: 166rpx;
+}
+.out-box .banner swiper {
+  height: 100%;
+}
+.out-box .banner image {
+  width: 100%;
+  height: 100%;
+}
+.out-box .sus-btns {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 40rpx;
+  margin-top: 20rpx;
+}
+.out-box .sus-btns.mt-18 {
+  margin-top: -18%;
+}
+.out-box .sus-btns .left {
+  pointer-events: auto;
+}
+.out-box .sus-btns .left image {
+  width: 134rpx;
+  height: 129rpx;
+}
+.out-box .sus-btns .right {
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.23);
+  pointer-events: auto;
+}
+.out-box .sus-btns .right button {
+  padding: 30rpx 0;
+  background-color: #fff;
+}
+.out-box .sus-btns .right button .kf {
+  width: 42rpx;
+  height: 41rpx;
+}
+.out-box .sus-btns .right .img-contain {
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.out-box .sus-btns .right .img-contain .scan {
+  width: 40rpx;
+  height: 40rpx;
+}
+.out-box .sus-btns .right .img-contain + .img-contain {
+  border-top: 1px solid #EBEBEB;
+}
+.out-box .swiper-wrap {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.out-box .swiper-wrap .loca {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30rpx;
+  margin-bottom: 30rpx;
+}
+.out-box .swiper-wrap .loca .icon-loca {
+  background: #fff;
+  font-size: 60rpx;
+  color: #434343;
+  border-radius: 10rpx;
+  padding: 2rpx 8rpx;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.23);
+  pointer-events: auto;
+}
+@-webkit-keyframes slideUp {
+0% {
+    opacity: 0;
+    -webkit-transform: translateY(100rpx);
+            transform: translateY(100rpx);
+}
+100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+}
+@keyframes slideUp {
+0% {
+    opacity: 0;
+    -webkit-transform: translateY(100rpx);
+            transform: translateY(100rpx);
+}
+100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+}
+@-webkit-keyframes slideDown {
+0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+100% {
+    opacity: 0;
+    -webkit-transform: translateY(100rpx);
+            transform: translateY(100rpx);
+}
+}
+@keyframes slideDown {
+0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+100% {
+    opacity: 0;
+    -webkit-transform: translateY(100rpx);
+            transform: translateY(100rpx);
+}
+}
+.out-box .swiper-wrap .swiper-card.loading {
+  -webkit-animation: slideDown .5s ease both;
+          animation: slideDown .5s ease both;
+}
+.out-box .swiper-wrap .swiper-card {
+  -webkit-animation: slideUp .5s ease both;
+          animation: slideUp .5s ease both;
+  pointer-events: auto;
+  background-color: #fff;
+  margin: 30rpx;
+  border-radius: 30rpx;
+  padding: 30rpx;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.15);
+}
+.out-box .swiper-wrap .swiper-card .flex-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.out-box .swiper-wrap .swiper-card .flex-head .left {
+  display: flex;
+  flex: 1;
+  width: 1%;
+}
+.out-box .swiper-wrap .swiper-card .flex-head .left image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+}
+.out-box .swiper-wrap .swiper-card .flex-head .left .info {
+  flex: 1;
+  width: 1%;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 20rpx;
+}
+.out-box .swiper-wrap .swiper-card .flex-head .left .info .tt {
+  font-size: 36rpx;
+}
+.out-box .swiper-wrap .swiper-card .flex-head .left .info .bb {
+  font-size: 24rpx;
+  color: #B3B3B3;
+}
+.out-box .swiper-wrap .swiper-card .flex-head .left .info .bb .add {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.out-box .swiper-wrap .swiper-card .flex-head .left .info .bb .iconfont {
+  color: #828282;
+  vertical-align: -1px;
+  margin-right: 5rpx;
+}
+.out-box .swiper-wrap .swiper-card .flex-head .right button {
+  border-radius: 10rpx;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 28rpx;
+  padding: 10rpx 15rpx;
+  background-color: #fff;
+}
+.out-box .swiper-wrap .swiper-card .flex-head .right button .iconfont {
+  margin-right: 5rpx;
+}
+.out-box .swiper-wrap .swiper-card .flex-head .right .share {
+  border-color: #242838;
+  color: #242838;
+}
+.out-box .swiper-wrap .swiper-card .flex-head .right .dh {
+  border-color: #54ab60;
+  color: #54ab60;
+  margin-top: 20rpx;
+}
+.out-box .swiper-wrap .swiper-card .flex-end {
+  border-top: 1px solid #F0F0F0;
+  padding-top: 30rpx;
+  padding-bottom: 10rpx;
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #242838;
+  font-size: 24rpx;
+}
+.out-box .swiper-wrap .swiper-card .flex-end .iconfont {
+  vertical-align: -4rpx;
+  color: #C8C8C8;
+}
+.center-img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200rpx;
+  height: 72rpx;
+  margin: auto;
+}
+.center-img .text {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 2px;
+}
+.center-img cover-image {
+  width: 200rpx;
+  height: 72rpx;
+}
+.tab-card {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 20rpx 40rpx;
+}
+.tab-card .loca {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30rpx;
+  margin-bottom: 30rpx;
+}
+.tab-card .loca .icon-loca {
+  background: #fff;
+  font-size: 60rpx;
+  color: #434343;
+  border-radius: 10rpx;
+  padding: 2rpx 8rpx;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.23);
+  pointer-events: auto;
+}
+.tab-card .row {
+  background-color: #fff;
+  border-radius: 32rpx;
+  pointer-events: auto;
+}
+.tab-card .row:before, .tab-card .row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.tab-card .row .col {
+  float: left;
+  width: 33.33%;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+.tab-card .row .col.bdtp {
+  border-top: 1px solid #F5F5F5;
+}
+.tab-card .row .col.bdlr {
+  border-left: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
+}
+.tab-card .row .col image {
+  width: 54rpx;
+  height: 54rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tab-card .row .col .text {
+  font-size: 24rpx;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15rpx;
+}
+

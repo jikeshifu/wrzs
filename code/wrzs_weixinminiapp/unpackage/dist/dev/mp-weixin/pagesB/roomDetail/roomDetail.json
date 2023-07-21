@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "u-parse": "/components/u-parse/u-parse",
+    "hours": "/components/hours/hours"
+  }
+}
