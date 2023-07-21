@@ -1,0 +1,142 @@
+.fixed-topbar {
+	position: relative;
+	image {
+		width: 100%;
+		height: 231px;
+	}
+	.fixed-item {
+		position: fixed;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		width: 100%;
+		.title {
+			position: relative;
+			display: flex;
+			align-items: center;
+			color: #fff;
+			justify-content: center;
+			.iconfont {
+				position: absolute;
+				z-index: 1;
+				font-size: 40upx;
+				padding-left: 20upx;
+				left: 0;
+				font-weight: bold;
+			}
+			.h1 {
+				font-size: 37upx;
+			}
+		}
+	}
+	.goods-info {
+		position: absolute;
+		z-index: 1;
+		width: 95%;
+		left: 0;
+		right: 0;
+		bottom: -20%;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #fff;
+		box-shadow: 0 5upx 18upx 0 rgba(0, 0, 0, 0.1);
+		border-radius: 20upx;
+		padding: 25upx 30upx;
+		.item {
+			display: flex;
+			padding-top: 20upx;
+			padding-bottom: 20upx;
+			image {
+				width: 160upx;
+				height: 130upx;
+			}
+			.info {
+				flex: 1;
+				width: 1%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				margin-left: 20upx;
+				.h4 {
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+					overflow: hidden;
+					height: 65upx;
+					line-height: 35upx;
+					font-size: 30upx;
+				}
+				.bt {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					font-size: 24upx;
+					.right {
+						color: #FF9813;
+					}
+				}
+			}
+		}
+	}
+}
+
+.pay-way {
+	margin: 30upx;
+	margin-top: 120upx;
+	padding: 20upx 30upx;
+	border-radius: 20upx;
+	box-shadow: 0 0 20upx rgba($color: #000000, $alpha: .15);
+	background-color: #fff;
+	.item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 20upx;
+		padding-bottom: 20upx;
+		.left {
+			font-size: 30upx;
+			.iconfont {
+				margin-right: 20upx;
+				font-size: 40upx;
+			}
+			.icon-qb {
+				color: #ff9813;
+			}
+			.icon-wxzf {
+				color: #6dbc41;
+				vertical-align: -4upx;
+			}
+			.warn {
+				color: #FF9813;
+				margin-left: 20upx;
+			}
+		}
+		.right {
+			image {
+				width: 40upx;
+				height: 40upx;
+			}
+		}
+	}
+}
+
+.empty-fixed {
+	height: 120upx;
+}
+
+.fixed-bottom-btn {
+	position: fixed;
+	z-index: 10;
+	bottom: 20upx;
+	left: 0;
+	width: 100%;
+	padding-left: 30upx;
+	padding-right: 30upx;
+	button {
+		height: 88upx;
+		line-height: 88upx;
+		background-color: #429435;
+		border-radius: 20upx;
+		font-size: 36upx;
+	}
+}

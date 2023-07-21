@@ -1,0 +1,153 @@
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+page {
+	background-color: #F8F8F8;
+}
+
+.room-info {
+	background-color: #fff;
+	padding: 30upx 20upx;
+	display: flex;
+	image {
+		width: 150upx;
+		height: 150upx;
+		border-radius: 10upx;
+	}
+	.info {
+		flex: 1;
+		width: 1%;
+		margin-left: 20upx;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.top {
+			font-size: 36upx;
+		}
+		.foot {
+			.p {
+				color: #B3B3B3;
+				font-size: 24upx;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+				.iconfont {
+					font-size: 30upx;
+					margin-right: 5upx;
+				}
+				& + .p {
+					margin-top: 10upx;
+				}
+			}
+		}
+	}
+}
+
+.row {
+	padding: 20upx 10upx;
+	.col {
+		float: left;
+		width: 50%;
+		padding-left: 10upx;
+		padding-right: 10upx;
+		margin-bottom: 20upx;
+		.item {
+			background-color: #fff;
+			border-radius: 10upx;
+			padding: 20upx;
+			.img-contain {
+				position: relative;
+				.tag {
+					position: absolute;
+					z-index: 1;
+					background-color: #429435;
+					color: #fff;
+					top: 20upx;
+					left: 0;
+					font-size: 24upx;
+					width: 50upx;
+					height: 40upx;
+					text-align: center;
+					line-height: 40upx;
+					&:after {
+						content: '';
+						position: absolute;
+						width: 0;
+						z-index: -1;
+						height: 0;
+						right: -50%;
+						top: 0;
+						border-style: solid;
+						border-width: 20upx;
+						border-color: #429435 transparent #429435 #429435;
+					}
+				}
+				image {
+					width: 100%;
+					height: 200upx;
+				}
+			}
+			.caption {
+				margin-top: 20upx;
+				overflow : hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				height: 60upx;
+				line-height: 30upx;
+				font-size: 24upx;
+				text {
+					font-size: 18upx;
+					border: 1px solid #ff2c2c;
+					padding: 1px 5upx;
+					color: #ff2c2c;
+					border-radius: 6upx;
+					margin-right: 10upx;
+				}
+			}
+			.foot {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 30upx;
+				.left {
+					color: #FF9813;
+					font-size: 36upx;
+					text {
+						font-size: 24upx;
+					}
+				}
+				.right {
+					.error {
+						background-color: rgba($color: #FF9813, $alpha: .15);
+						color: #FF9813;
+						font-size: 24upx;
+						padding: 5upx;
+						border-radius: 6upx;
+					}
+					.null {
+						position: absolute;
+						z-index: 1;
+						right: 0;
+						bottom: 0;
+						image {
+							width: 82upx;
+							height: 63upx;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.row:after,
+.row:before {
+	content: '';
+	display: table;
+	clear: both;
+}

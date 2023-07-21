@@ -1,0 +1,26 @@
+.textarea {
+	padding: 30upx;
+	textarea {
+		width: 100%;
+		padding: 20upx;
+		background-color: #FAFAFA;
+		border-radius: 10upx;
+		font-size: 30upx;
+	}
+}
+
+.fixed-bottom-btn {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	padding: 30upx;
+	button {
+		background-color: #4AA63C;
+		height: 88upx;
+		line-height: 88upx;
+		font-size: 36upx;
+		border-radius: 20upx;
+	}
+}

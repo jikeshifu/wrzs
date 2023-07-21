@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "high-precision-four-fundamental-rules": "^1.2.3",
+    "normalize.css": "^8.0.1"
+  }
+}

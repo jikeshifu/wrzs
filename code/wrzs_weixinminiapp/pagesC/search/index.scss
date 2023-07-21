@@ -1,0 +1,27 @@
+page {
+	background-color: #F8F8F8;
+}
+
+.search-box {
+	padding: 30upx;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	input {
+		background-color: #f8f8f8;
+		border-radius: 50upx;
+		text-align: center;
+		font-size: 30upx;
+		height: 60upx;
+		flex: 1;
+	}
+	button {
+		height: 60upx;
+		line-height: 60upx;
+		background-color: transparent;
+		color: #429435;
+		&.button-hover {
+			background-color: transparent;
+		}
+	}
+}

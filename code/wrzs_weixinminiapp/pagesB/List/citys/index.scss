@@ -1,0 +1,56 @@
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+.checked {
+	margin-left: 30upx;
+	margin-right: 30upx;
+	border-bottom: 1px solid #d3d3d3;
+	.h4 {
+		font-size: 30upx;
+	}
+	.p {
+		font-size: 24upx;
+		height: 80upx;
+		line-height: 80upx;
+	}
+}
+
+.list {
+	flex: 1;
+	height: 1%;
+	padding-left: 30upx;
+	padding-right: 30upx;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	.h4 {
+		font-size: 30upx;
+		margin-top: 30upx;
+	}
+	scroll-view {
+		flex: 1;
+		height: 1%;
+		margin-left: -10upx;
+		margin-right: -10upx;
+		.col {
+			float: left;
+			width: 25%;
+			padding-left: 10upx;
+			padding-right: 10upx;
+			margin-top: 30upx;
+			.item {
+				border: 1px solid #eee;
+				border-radius: 4upx;
+				font-size: 24upx;
+				padding-top: 10upx;
+				padding-bottom: 10upx;
+				text-align: center;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+		}
+	}
+}

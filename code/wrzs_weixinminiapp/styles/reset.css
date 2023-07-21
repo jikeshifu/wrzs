@@ -1,0 +1,73 @@
+view,
+button,
+input,
+label,
+text,
+swiper,
+swiper-item,
+scroll-view,
+form,
+navigator,
+picker,
+textarea {
+	box-sizing: border-box;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: none !important;
+}
+
+page {
+	font-size: 28upx;
+	color: #353535;
+	background-color: #fff;
+	overflow-y: auto!important;
+}
+
+page,
+.content {
+	height: 100%;
+}
+
+button:after {
+	display: none;
+}
+
+image {
+	display: block;
+}
+
+.mt15 {
+	margin-top: 15upx;
+}
+
+.mt20 {
+	margin-top: 20upx;
+}
+
+.mt30 {
+	margin-top: 30upx;
+}
+
+.half:before {
+	content: '\2002';
+	speak: none;
+}
+
+.full:before {
+	content: '\2003';
+	speak: none;
+}
+
+scroll-view {
+	overflow-y: auto;
+}
+
+.content-body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}

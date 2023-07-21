@@ -1,0 +1,51 @@
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+.scroll-view {
+	position: relative;
+	z-index: 1;
+	flex: 1;
+	height: 1%;
+	scroll-view {
+		height: 100%;
+		.item {
+			position: relative;
+			image {
+				width: 100%;
+				height: 177px;
+			}
+			.card-cnt {
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				.head {
+					padding-top: 40upx;
+					padding-left: 60upx;
+					.h4 {
+						font-size: 30upx;
+						color: #fff;
+					}
+					.p {
+						font-size: 24upx;
+						color: rgba($color: #fff, $alpha: .7);
+						margin-top: 20upx;
+					}
+				}
+				.foot {
+					font-size: 37upx;
+					color: #fff;
+					padding-left: 60upx;
+					margin-top: 50upx;
+					.big {
+						font-size: 60upx;
+					}
+				}
+			}
+		}
+	}
+}

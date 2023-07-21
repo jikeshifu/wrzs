@@ -1,0 +1,22 @@
+.scroll-view {
+	flex: 1;
+	height: 1%;
+	scroll-view {
+		height: 100%;
+		padding-left: 20upx;
+		padding-right: 20upx;
+		.p {
+			font-size: 32upx;
+			color: #9a9a9a;
+			line-height: 50rpx;
+			text-align: justify;
+		}
+		image {
+			margin-top: 20upx;
+			margin-bottom: 20upx;
+			& + image {
+				margin-top: 20upx;
+			}
+		}
+	}
+}

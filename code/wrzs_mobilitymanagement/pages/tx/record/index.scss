@@ -1,0 +1,46 @@
+page {
+	background-color: #f5f5f5;
+}
+
+.content {
+	padding-top: 20upx;
+}
+
+.item {
+	background-color: #fff;
+	padding: 30upx;
+	.flex {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.tip {
+			font-size: 24upx;
+			color: #7a7a7a;
+			padding-top: 20upx;
+		}
+	}
+	& + .item {
+		margin-top: 20upx;
+	}
+	.left {
+		.h4 {
+			font-weight: bold;
+			&.danger {
+				color: #eb4141;
+			}
+			&.warning {
+				color: #ffb100;
+			}
+			&.success {
+				color: #4cbd1d;
+			}
+		}
+		.p {
+			color: #adadad;
+			margin-top: 20upx;
+		}
+	}
+	.right {
+		font-weight: bold;
+	}
+}
