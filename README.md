@@ -1,5 +1,5 @@
 # 无人值守共享空间共享茶室自助棋牌室源码
-## 源代码小复杂，目前只提供给购买了相应硬件的用户，在硬件云有硬件设备用户可以下载源码 https://wdev.wmj.com.cn/
+### 源代码小复杂，需要熟悉Thinkphp、Vue、Xbuilder才能搞定，硬件购买地址 https://weimenjin.taobao.com （门禁机、低功耗实时连接wifi锁、空开断路器、云喇叭等）
 
 ![输入图片说明](images/image.png)
 
@@ -40,4 +40,4 @@
 ![输入图片说明](images/image22.png)
 ![输入图片说明](images/image23.png)
 ![输入图片说明](images/image24.png)
-### 三、低功耗实时连接wifi锁、空开断路器、云喇叭购买 https://weimenjin.taobao.com
+### 三、 https://wdev.wmj.com.cn/
