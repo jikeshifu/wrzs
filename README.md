@@ -1,6 +1,6 @@
 # 无人值守共享空间共享茶室自助棋牌室源码
 ### 源代码小复杂，需要熟悉Thinkphp、Vue、HBuilderX、SuperVisord等才能搞定，硬件购买地址 https://weimenjin.taobao.com （门禁机、低功耗实时连接wifi锁、空开断路器、云喇叭等）
-
+最新版本请看https://gitee.com/jikeshifu/wrzs
 ![输入图片说明](images/image.png)
 
 ### 一、摘要
