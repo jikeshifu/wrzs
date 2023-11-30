@@ -12,7 +12,7 @@ use think\facade\Route;
 
 Route::group('/', function () {
 
-//    Route::any('store.Store/list', 'store.Store/list');
+    //    Route::any('store.Store/list', 'store.Store/list');
     Route::any('order.Room/placeOrder', 'order.Room/placeOrder');
     Route::any('api/user.Order/info', 'api/user.Order/info');
     Route::any('watch.user/mobile', 'watch.user/mobile');
@@ -22,8 +22,4 @@ Route::group('/', function () {
     Route::any('store.Store/nearby', 'store.Store/nearby');
     Route::any('user.Balance/info', 'user.Balance/info');
     Route::any('shop.ShoppingCar/list', 'shop.ShoppingCar/list');
-
-
-
-})->middleware([ \app\middleware\JwtAuth::class]);
-
+})->middleware([\app\middleware\JwtAuth::class]);

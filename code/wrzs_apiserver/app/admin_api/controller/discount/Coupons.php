@@ -103,16 +103,16 @@ class Coupons
 
         $discount_coupons['end_time'] = time() + ($discount_coupons['day_number'] * 86400);
 
-       $member = Db::name("member")->field('member_id')->select()->toArray();
+        $member = Db::name("member")->field('member_id')->select()->toArray();
         $redis = Redis::redis();
-       foreach ($member as $vo){
-           $discount_coupons['member_id'] =$vo['member_id'];
+        foreach ($member as $vo) {
+            $discount_coupons['member_id'] = $vo['member_id'];
 
-           $redis->lPush('rrt-givesCoupons',json_encode($discount_coupons));
-       }
+            $redis->lPush('rrt-givesCoupons', json_encode($discount_coupons));
+        }
 
-//        unset($discount_coupons['day_number']);
-//        Db::name("member_coupons")->insert($discount_coupons);
+        //        unset($discount_coupons['day_number']);
+        //        Db::name("member_coupons")->insert($discount_coupons);
         return json(SuccessCode::$statusOk);
     }
 

@@ -21,4 +21,3 @@ Route::group('/', function () {
     Route::any('order.Room/returnDeposit', 'order.Room/returnDeposit'); //押金退还
 
 })->middleware([\app\middleware\JwtAuth::class]);
-

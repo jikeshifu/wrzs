@@ -8,10 +8,11 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
+
 use think\facade\Route;
 
-Route::get('think', function () {
-    return 'hello,ThinkPHP6!';
-});
+// Route::get('think', function () {
+//     return 'hello,ThinkPHP8!';
+// });
 
-Route::get('hello/:name', 'index/hello');
+// Route::get('hello/:name', 'index/hello');

@@ -7,7 +7,7 @@
         "thinkphp",
         "ORM"
     ],
-    "homepage": "http://thinkphp.cn/",
+    "homepage": "https://www.thinkphp.cn/",
     "license": "Apache-2.0",
     "authors": [
         {
@@ -20,11 +20,12 @@
         }
     ],
     "require": {
-        "php": ">=7.1.0",
-        "topthink/framework": "^6.0.0",
-        "topthink/think-orm": "^2.0",
-        "topthink/think-multi-app": "^1.0",
-        "topthink/think-filesystem":"^1.0",
+        "php": ">=8.0.0",
+        "topthink/framework": "^8.0",
+        "topthink/think-orm": "^3.0",
+        "topthink/think-filesystem": "^2.0",
+        "topthink/think-image": "^1.0",
+
         "overtrue/wechat": "~5.0",
         "pda/pheanstalk": "^4.0",
         "endroid/qr-code": "^4.3",
@@ -36,6 +37,7 @@
     },
     "autoload": {
         "psr-4": {
+            "addons\\": "addons",
             "app\\": "app"
         },
         "psr-0": {

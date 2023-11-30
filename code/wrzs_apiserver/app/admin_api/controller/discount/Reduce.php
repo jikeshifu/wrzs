@@ -22,11 +22,10 @@ class Reduce
     {
         $data = Request::only($this->file_ld);
         $wxapp_id = User::wxappid();
-//        $data['wxapp_id'] = $wxapp_id;
+        //        $data['wxapp_id'] = $wxapp_id;
         $data['created_at'] = time();
         Db::name("discount_reduce")->insert($data);
         return json(['status' => 1, 'msg' => '添加成功']);
-
     }
 
 
@@ -36,14 +35,14 @@ class Reduce
         $page = input('post.page', '1');
         $limit = input('post.limit', '10');
         $title = input('post.title');
-        $room_id = input('post.room_id' );
-        if(!$room_id){
+        $room_id = input('post.room_id');
+        if (!$room_id) {
             return json(['status' => 1, 'msg' => 'room_id不能为空']);
         }
         $wxapp_id = User::wxappid();
         $where = [
             'deleted_at' => 0,
-//            'wxapp_id' => $wxapp_id,
+            //            'wxapp_id' => $wxapp_id,
             'room_id' => $room_id,
         ];
 
@@ -63,7 +62,7 @@ class Reduce
     {
         $data = Request::only($this->file_ld);
 
-        $reduce_id= input('post.reduce_id');
+        $reduce_id = input('post.reduce_id');
         if (!$reduce_id) {
             return json(['status' => 0, 'msg' => 'reduce_id不能为空']);
         }
@@ -77,7 +76,7 @@ class Reduce
     {
 
 
-        $reduce_id= input('post.reduce_id');
+        $reduce_id = input('post.reduce_id');
         if (!$reduce_id) {
             return json(['status' => 0, 'msg' => 'reduce_id不能为空']);
         }

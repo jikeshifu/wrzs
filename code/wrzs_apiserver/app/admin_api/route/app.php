@@ -11,14 +11,9 @@
 use think\facade\Route;
 
 Route::group('/', function () {
-
     Route::any('/order.Order/list', 'order.Order/list');
     Route::any('/order.Order/cancel', 'order.Order/cancel');
     Route::any('/join.User/list', 'join.User/list');
-
-
-
-
 })->middleware([\app\middleware\JwtAuth::class]);
 
 Route::any('/user.User/login', 'user.User/login');
