@@ -1,5 +1,5 @@
 <template>
-	<web-view src="https://wmm.weishequ.com/"></web-view>
+	<web-view src="https://wmm.seeare.com/"></web-view>
 </template>
 
 <script>

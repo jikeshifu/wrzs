@@ -8,7 +8,7 @@
 	export default {
 		data() {
 			return {
-				url:'http://wmm.weishequ.com'
+				url:'http://wmm.seeare.com'
 			};
 		}
 	}

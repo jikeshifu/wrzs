@@ -1,4 +1,4 @@
-const baseUrl = 'https://was.weishequ.com'
+const baseUrl = 'https://was.seeare.com'
 import store from '@/store'
 const apiRequest = object => {
 	return new Promise((resolve, reject) => {
