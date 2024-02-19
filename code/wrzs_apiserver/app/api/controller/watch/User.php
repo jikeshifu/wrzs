@@ -57,7 +57,7 @@ class User
         $member_wechat = Db::name('member_wechat')->where(['openid' => $user['openid']])->find();
         if (!$member_wechat) {
             $member_id = Db::name('member_wechat')->insertGetId(['openid' => $user['openid']]);
-            Db::name('member_wallet')->insertGetId(['openid' => $user['openid']]);
+            Db::name('member_wallet')->insertGetId(['member_id' => $member_id]);
             $member_wechat = [
                 'avatar_url' => null,
                 'created_at' => null,

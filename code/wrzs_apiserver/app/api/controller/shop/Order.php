@@ -56,6 +56,7 @@ class Order
             Db::rollback();
             $err =ErrorCode::$code[0];
             $err['err_msg']=$e->getMessage();
+            $err['err_trace']=$e->getTraceAsString();
             $err['sql']=Db::name("goods")->getLastSql();
             return json($err);
         }
