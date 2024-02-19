@@ -21,9 +21,9 @@ class Redis
         }
         $Redis = new \Redis();
 
-        $Redis->connect('1.14.157.238', 6379);
+        $Redis->connect('127.0.0.1', 6379);
 
-        $Redis->auth('cbcc5e5d1c6e2859');
+        $Redis->auth('seeare@password');
         $Redis->select(11);
         self::$redis = $Redis;
         return self::$redis;

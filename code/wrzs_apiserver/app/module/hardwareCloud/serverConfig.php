@@ -8,8 +8,8 @@ class serverConfig
 {
     //默认对接硬件云配置
     static $WiFIUrl = "https://wdev.wmj.com.cn/deviceApi/";
-    static $AppId = "208ac48ff968ab0dc675008d0ded46d1";
-    static $AppSecret = "ad45d97d283c518e15b4bda75c887dec";
+    static $AppId = "bc2bc50e5f2239b38f9edb11997ad464";
+    static $AppSecret = "f178ddefcc7c9075f14dab84c137fff8";
 
     static function GetUrl(){
         return self::$WiFIUrl;
