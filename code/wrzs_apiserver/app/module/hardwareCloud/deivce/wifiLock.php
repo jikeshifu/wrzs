@@ -83,8 +83,16 @@ class wifiLock
         if ($res["code"] != 0) {
             return ["err" => $res["msg"]];
         }
-        if ($res["data"]["info"]["err_code"] != 0) {
-            return ["err" =>"开锁失败".$res["data"]["info"]["err_code"]];
+
+        if(isset((($res["data"]??[])["info"]??[])["err_code"])){
+           $errCode =  $res["data"]["info"]["err_code"];
+        }elseif (isset((($res["data"]??[])["info"]??[])["code"])){
+            $errCode =  $res["data"]["info"]["code"];
+        }else{
+            $errCode = null;
+        }
+        if ($errCode != 0) {
+            return ["err" =>"开锁失败".$errCode];
         }
 
         return ["err" => null,"data"=>$res["data"]];
