@@ -1,5 +1,5 @@
-# 无人值守共享空间共享茶室自助棋牌室源码
-### 源代码小复杂，需要熟悉Thinkphp、Vue、HBuilderX、SuperVisord等才能搞定，硬件购买地址 https://weimenjin.taobao.com （门禁机、低功耗实时连接wifi锁、空开断路器、云喇叭等）
+# 无人值守共享空间共享茶室自助棋牌室源码，前后端及数据库完整开源
+### 源代码小复杂，需要熟悉Thinkphp、Vue、HBuilderX、SuperVisord、Pheanstalk等才能搞定，硬件购买地址 https://weimenjin.taobao.com （门禁机、低功耗实时连接wifi锁、空开断路器、云喇叭等,搭建后可以联系我们获取测试硬件序列号）
 ### 下载请给个star，star是攻城狮生发的动力
 ![输入图片说明](images/02df780a39cb63aed78f76c7b4442cb.jpg)
 
