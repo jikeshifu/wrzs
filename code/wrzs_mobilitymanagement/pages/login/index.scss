@@ -1,0 +1,61 @@
+.bg-wrap {
+	position: relative;
+	.bg {
+		width: 100%;
+		height: 300upx;
+	}
+	.avatar-box {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		top: 110upx;
+		image {
+			margin-left: auto;
+			margin-right: auto;
+			width: 120upx;
+			height: 120upx;
+			border-radius: 100%;
+		}
+		.p {
+			color: #fff;
+			text-align: center;
+			margin-top: 20upx;
+		}
+	}
+}
+
+.form-contain {
+	width: 80%;
+	margin: 100upx auto 0;
+	.input-group {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border: 1px solid #ebebeb;
+		border-radius: 100upx;
+		padding: 20upx;
+		.iconfont {
+			font-size: 60upx;
+		}
+		input {
+			font-size: 28upx;
+			flex: 1;
+			padding-left: 20upx;
+		}
+	}
+	.input-group + .input-group {
+		margin-top: 50upx;
+	}
+	.btn {
+		width: 100%;
+		background-color: #1f6ecf;
+		color: #fff;
+		border-radius: 100upx;
+		margin-top: 100upx;
+		height: 100upx;
+		line-height: 100upx;
+		font-size: 30upx;
+	}
+}

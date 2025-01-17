@@ -1,0 +1,154 @@
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+.tabs-nav {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	.item {
+		position: relative;
+		padding-top: 20upx;
+		padding-bottom: 20upx;
+		flex: 1;
+		color: #4A5B6C;
+		text-align: center;
+		transition: all .25s;
+	}
+	.item:after {
+		content: '';
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 20%;
+		height: 2px;
+		background-color: transparent;
+		margin-left: auto;
+		margin-right: auto;
+		transition: all .25s;
+	}
+	.item.active {
+		color: #429435;
+	}
+	.item.active:after {
+		background-color: #429435;
+	}
+}
+
+.swiper {
+	flex: 1;
+	height: 1%;
+	swiper,
+	scroll-view {
+		height: 100%;
+	}
+	scroll-view {
+		margin-top: 30upx;
+		padding-bottom: 30upx;
+	}
+	.item {
+		padding: 30upx;
+		border-radius: 10upx;
+		box-shadow: 0 0 20upx rgba($color: #000000, $alpha: .15);
+		margin-left: 30upx;
+		margin-right: 30upx;
+		.top {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.left {
+				font-size: 24upx;
+				flex: 1;
+				width: 1%;
+				margin-right: 30upx;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			.right {
+				.qdsh {
+					display: flex;
+					align-items: center;
+					color: #FF9813;
+					font-size: 26upx;
+					button {
+						height: 52upx;
+						line-height: 52upx;
+						font-size: 24upx;
+						background-color: #429435;
+						border-radius: 10upx;
+						margin-left: 20upx;
+					}
+				}
+				.normal {
+					font-size: 30upx;
+					text {
+						color: #FF9813;
+						margin-right: 20upx;
+					}
+				}
+				.dzf {
+					display: flex;
+					align-items: center;
+					color: #FF9813;
+					font-size: 42upx;
+					text {
+						font-size: 24upx;
+					}
+					button {
+						height: 52upx;
+						line-height: 52upx;
+						font-size: 24upx;
+						background-color: #429435;
+						border-radius: 10upx;
+						margin-left: 20upx;
+					}
+				}
+			}
+		}
+		.goods-wrap {
+			margin-top: 20upx;
+			.inner {
+				display: flex;
+				padding-top: 20upx;
+				padding-bottom: 20upx;
+				image {
+					width: 160upx;
+					height: 130upx;
+				}
+				.info {
+					flex: 1;
+					width: 1%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					margin-left: 20upx;
+					.h4 {
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 2;
+						overflow: hidden;
+						height: 65upx;
+						line-height: 35upx;
+						font-size: 30upx;
+					}
+					.bt {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						font-size: 24upx;
+						.right {
+							color: #B3B3B3;
+						}
+					}
+				}
+			}
+		}
+		& + .item {
+			margin-top: 30upx;
+		}
+	}
+}

@@ -1,0 +1,141 @@
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+.bg-wrap {
+	position: relative;
+	image {
+		width: 100%;
+		height: 132px;
+	}
+	.abs-contt {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 50upx 60upx;
+		.head {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 24upx;
+			.left {
+				color: rgba($color: #fff, $alpha: .6);
+			}
+			.right {
+				color: #fff;
+				.iconfont {
+					font-size: 24upx;
+					margin-left: 10upx;
+				}
+			}
+		}
+		.foot {
+			margin-top: 35upx;
+			font-size: 48upx;
+			color: #fff;
+			text {
+				display: inline-block;
+				font-size: 24upx;
+				border-radius: 30upx;
+				background-color: #ff9813;
+				margin-left: 20upx;
+				padding: 10upx 15upx;
+				vertical-align: bottom;
+			}
+		}
+	}
+}
+
+.h4 {
+	color: #B3B3B3;
+	font-size: 18upx;
+	text-align: center;
+}
+
+scroll-view {
+	position: relative;
+	flex: 1;
+	height: 1%;
+	.item {
+		margin-left: 20upx;
+		margin-right: 20upx;
+		box-shadow: 0 10upx 18upx 0 rgba(0, 0, 0, 0.1);
+		border-radius: 20upx;
+		padding: 30upx 24upx;
+		.head {
+			display: flex;
+			image {
+				width: 140upx;
+				height: 140upx;
+				border-radius: 10upx;
+			}
+			.info {
+				flex: 1;
+				width: 1%;
+				margin-left: 20upx;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				.title {
+					text-overflow: ellipsis;
+					overflow: hidden;
+					white-space: nowrap;
+					font-size: 36upx;
+				}
+				.bt {
+					.p {
+						color: #B3B3B3;
+						font-size: 24upx;
+						text-overflow: ellipsis;
+						overflow: hidden;
+						white-space: nowrap;
+						text {
+							color: #828282;
+							font-size: 24upx;
+							margin-right: 10upx;
+						}
+						& + .p {
+							margin-top: 10upx;
+						}
+					}
+				}
+			}
+		}
+		.foot {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			border-top: 1px solid #F0F0F0;
+			padding-top: 30upx;
+			margin-top: 30upx;
+			.left {
+				font-size: 24upx;
+				display: flex;
+				align-items: center;
+				color: #B3B3B3;
+				text:first-child {
+					margin-left: 10upx;
+				}
+				text {
+					color: #FF9813;
+				}
+				.big {
+					font-size: 36upx;
+				}
+			}
+			.right {
+				color: #fff;
+				background-color: #4BA73C;
+				border-radius: 10upx;
+				padding: 10upx 15upx;
+			}
+		}
+		& + .item {
+			margin-top: 20upx;
+		}
+	}
+}

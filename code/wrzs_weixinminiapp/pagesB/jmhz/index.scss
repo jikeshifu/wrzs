@@ -1,0 +1,127 @@
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+.fixed-topbar {
+	position: relative;
+	image {
+		width: 100%;
+		height: 267px;
+	}
+	.fixed-item {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		.title {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-size: 40upx;
+			.iconfont {
+				position: absolute;
+				z-index: 1;
+				font-size: 40upx;
+				left: 0;
+				padding-left: 20upx;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.form-group {
+	flex: 1;
+	height: 1%;
+	position: relative;
+	z-index: 2;
+	margin-top: -10%;
+	background-color: #fff;
+	border-top-left-radius: 40upx;
+	border-top-right-radius: 40upx;
+	padding: 30upx;
+	overflow-y: auto;
+	.title {
+		font-size: 37upx;
+	}
+	.form {
+		background-color: #FAFAFA;
+		border-radius: 10upx;
+		padding-left: 20upx;
+		padding-right: 20upx;
+		margin-top: 30upx;
+		.input-group {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding-top: 10upx;
+			padding-bottom: 10upx;
+			.left {
+				font-size: 30upx;
+				text {
+					color: #FF5656;
+				}
+			}
+			input {
+				height: 80upx;
+				font-size: 30upx;
+				text-align: right;
+				flex: 1;
+				margin-left: 20upx;
+			}
+			picker {
+				color: #c9c9c9;
+				height: 80upx;
+				line-height: 80upx;
+				flex: 1;
+				margin-left: 20upx;
+				text-align: right;
+				.active {
+					color: #000;
+				}
+			}
+			& + .input-group {
+				border-top: 1px solid #ECECEC;
+			}
+		}
+	}
+}
+
+.textarea {
+	margin-top: 30upx;
+	textarea {
+		width: 100%;
+		background-color: #FAFAFA;
+		border-radius: 10upx;
+		padding: 20upx;
+	}
+}
+
+.h190 {
+	height: 190upx;
+}
+
+.fixed-bottom-btn {
+	position: fixed;
+	z-index: 10;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 30upx;
+	background-color: #fff;
+	.p {
+		font-size: 24upx;
+		text-align: center;
+	}
+	button {
+		margin-top: 20upx;
+		background-color: #4AA63C;
+		border-radius: 20upx;
+		font-size: 36upx;
+		height: 88upx;
+		line-height: 88upx;
+	}
+}

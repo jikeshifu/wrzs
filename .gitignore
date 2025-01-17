@@ -1,0 +1,11 @@
+
+# 忽略 node_modules
+
+code/wrzs_storemanagement/node_modules
+code/wrzs_management/node_modules
+
+
+# 忽略 打包产物
+dist
+unpackage
+runtime

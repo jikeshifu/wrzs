@@ -1,0 +1,48 @@
+page {
+	background-color: #f5f5f5;
+}
+
+.banner {
+	background-color: #9fcbfb;
+	.caption {
+		text-align: center;
+		color: #fff;
+		padding-top: 50upx;
+		padding-bottom: 50upx;
+		.title {
+			font-size: 32upx;
+		}
+		.p {
+			font-size: 30upx;
+			margin-top: 20upx;
+		}
+	}
+}
+
+.card-box {
+	background-color: #fff;
+	.row {
+		.col {
+			float: left;
+			width: 33.33%;
+			.item {
+				text-align: center;
+				padding-top: 20upx;
+				padding-bottom: 20upx;
+				.iconfont {
+					font-size: 50upx;
+				}
+				.text {
+					font-size: 30upx;
+					margin-top: 10upx;
+				}
+			}
+		}
+		&:before,
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+}

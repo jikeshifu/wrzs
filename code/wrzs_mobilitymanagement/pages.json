@@ -1,0 +1,90 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/Tabs/index/index",
+			"style": {
+				"navigationBarTitleText": "门店",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/Tabs/user/user",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/Tabs/order/order",
+			"style": {
+				"navigationBarTitleText": "订单管理",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/Tabs/shg/shg",
+			"style": {
+				"navigationBarTitleText": "售货柜",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "pages/shg/shg",
+			"style": {
+				"navigationBarTitleText": "商品格"
+			}
+		}, {
+			"path": "pages/wallet/wallet",
+			"style": {
+				"navigationBarTitleText": "我的资产"
+			}
+		}, {
+			"path": "pages/tx/tx",
+			"style": {
+				"navigationBarTitleText": "提现"
+			}
+		}, {
+			"path": "pages/tx/record/record",
+			"style": {
+				"navigationBarTitleText": "提现记录"
+			}
+		}, {
+			"path": "pages/profit/record/record",
+			"style": {
+				"navigationBarTitleText": "收益记录"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "门店管理",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#fff"
+	},
+	"tabBar": {
+		"color": "#333",
+		"selectedColor": "#1f6ecf",
+		"list": [{
+			"pagePath": "pages/Tabs/index/index",
+			"iconPath": "static/imgs/Tabs/home.png",
+			"selectedIconPath": "static/imgs/Tabs/home2.png",
+			"text": "门店"
+		}, {
+			"pagePath": "pages/Tabs/order/order",
+			"iconPath": "static/imgs/Tabs/order.png",
+			"selectedIconPath": "static/imgs/Tabs/order2.png",
+			"text": "订单管理"
+		}, {
+			"pagePath": "pages/Tabs/shg/shg",
+			"iconPath": "static/imgs/Tabs/shg.png",
+			"selectedIconPath": "static/imgs/Tabs/shg2.png",
+			"text": "售货柜"
+		}, {
+			"pagePath": "pages/Tabs/user/user",
+			"iconPath": "static/imgs/Tabs/user.png",
+			"selectedIconPath": "static/imgs/Tabs/user2.png",
+			"text": "我的"
+		}]
+	}
+}

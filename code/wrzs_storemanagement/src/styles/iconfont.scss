@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "kj"; /* Project id 2670543 */
+  src: url('//at.alicdn.com/t/font_2670543_9eageh6drp7.woff2?t=1632652188374') format('woff2'),
+       url('//at.alicdn.com/t/font_2670543_9eageh6drp7.woff?t=1632652188374') format('woff'),
+       url('//at.alicdn.com/t/font_2670543_9eageh6drp7.ttf?t=1632652188374') format('truetype');
+}
+
+.kj {
+  font-family: "kj" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.kj-service:before {
+  content: "\e67e";
+}
+
+.kj-discount:before {
+  content: "\e64a";
+}
+
+.kj-power:before {
+  content: "\e614";
+}
+
+.kj-coupon:before {
+  content: "\e8c0";
+}
+
+.kj-device:before {
+  content: "\e622";
+}
+
+.kj-store:before {
+  content: "\e682";
+}
+
+.kj-money:before {
+  content: "\e6b7";
+}
+
+.kj-home:before {
+  content: "\e659";
+}
+
+.kj-storeAdm:before {
+  content: "\e696";
+}
+
+.kj-domain:before {
+  content: "\e62b";
+}
+
+.kj-ewm:before {
+  content: "\e600";
+}
+
+.kj-xcx:before {
+  content: "\e61e";
+}
+
+.kj-wechat:before {
+  content: "\e61a";
+}
+
+.kj-qb:before {
+  content: "\e672";
+}
+
+.kj-stock:before {
+  content: "\e6ea";
+}
